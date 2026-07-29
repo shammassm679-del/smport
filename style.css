@@ -302,11 +302,11 @@ body.locked{overflow:hidden}
     width:calc(25% - 20px);
   }
 
-
   :root{
     --page-max-width:1000px;
     --page-gap:48px;
   }
+
 }
 
 /* Tablet */

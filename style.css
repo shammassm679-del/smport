@@ -290,22 +290,18 @@ body.locked{overflow:hidden}
 
 /* Desktop */
 @media (min-width:1024px) and (max-width:1439px){
+
   .categories-grid{
-    grid-template-columns: repeat(4, 1fr);
+    display:flex;
+    flex-wrap:wrap;
     justify-content:center;
+    gap:20px;
   }
 
-  .category-card:nth-child(5){
-    grid-column:1;
+  .category-card{
+    width:calc(25% - 20px);
   }
 
-  .category-card:nth-child(6){
-    grid-column:2;
-  }
-
-  .category-card:nth-child(7){
-    grid-column:3;
-  }
 
   :root{
     --page-max-width:1000px;

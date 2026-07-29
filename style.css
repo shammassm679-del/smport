@@ -375,16 +375,37 @@ body.locked{overflow:hidden}
     padding:30px 0;
   }
 
-  .categories-grid{
-    grid-template-columns:1fr;
-    gap:16px;
-  }
+ .categories-grid{
+    grid-template-columns:repeat(4, 1fr);
+    gap:12px;
+    justify-content:center;
+    max-width:100%;
+}
 
-  .category-card{
-    padding:24px 15px;
-    font-size:15px;
-  }
+.category-card{
+    padding:18px 8px;
+    font-size:12px;
+    border-radius:12px;
+}
+   
+.category-card:last-child{
+    grid-column:2 / span 2;
+}
 
+/* Mobile image spacing fix */
+
+.viewer-inner{
+    gap:12px;
+}
+
+.viewer{
+    padding:20px 0 60px;
+}
+
+.page{
+    width:100%;
+    margin:0;
+}
 
   /* Portfolio images */
   .viewer{

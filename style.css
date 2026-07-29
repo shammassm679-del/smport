@@ -388,6 +388,17 @@ body.locked{overflow:hidden}
     justify-content:center;
   }
 
+   .category-card{
+    width:calc(25% - 12px);
+}
+
+
+/* Hide brand text on mobile */
+.brand-link{
+    display:none;
+}
+
+}
 
   /* Portfolio category cards */
   .categories{
@@ -403,6 +414,14 @@ body.locked{overflow:hidden}
 
 .category-card{
     width:calc(25% - 12px);
+    min-height:70px;
+    padding:12px 6px;
+    font-size:11px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    line-height:1.2;
 }
    
 /* Mobile image spacing fix */

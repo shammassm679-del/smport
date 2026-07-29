@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Creative Designer Portfolio — SHAMMAS S M</title>
+  <meta name="description" content="Premium portfolio viewer converting PDF pages into an interactive website." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Primary stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="site locked" data-ready="false">
+
+  <!-- Intro overlay -->
+  <div id="intro-overlay" class="intro-overlay" aria-hidden="false">
+    <div class="intro-inner" role="dialog" aria-label="portfolio intro" aria-modal="true">
+      <div class="intro-words" id="intro-words" aria-hidden="true">
+        <!-- JS will split letters into spans for animation -->
+        <span class="word-text">PORTFOLIO</span>
+      </div>
+
+      <div class="intro-sub" id="intro-sub" aria-hidden="true">
+        <h2 class="intro-name">SHAMMAS S M</h2>
+        <p class="intro-role">Graphic Designer</p>
+      </div>
+
+      <button id="enter-btn" class="enter-btn" aria-label="Enter portfolio">
+        ENTER PORTFOLIO
+        <span class="enter-glow" aria-hidden="true"></span>
+        <span class="ripple" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#" id="brand-link" class="brand-link" aria-label="Home — SHAMMAS S M">SHAMMAS</a>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <ul class="nav-list" id="nav-list">
+          <li><button class="nav-item" data-target="profile">Profile</button></li>
+          <li><button class="nav-item" data-target="logo">Logo & Branding</button></li>
+          <li><button class="nav-item" data-target="poster">Poster Designs</button></li>
+          <li><button class="nav-item" data-target="print">Print Designs</button></li>
+          <li><button class="nav-item" data-target="marketing">Marketing & Ads</button></li>
+          <li><button class="nav-item" data-target="packaging">Packaging Designs</button></li>
+          <li><button class="nav-item" data-target="event">Event Designs</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main id="main" class="main" role="main" tabindex="-1">
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <h1 class="hero-title">SHAMMAS S M</h1>
+        <p class="hero-sub">Graphic Designer — Premium portfolio presentation</p>
+        <div class="hero-ctas">
+          <button id="view-portfolio" class="btn btn-primary">View Portfolio</button>
+          <a href="#contact" class="btn btn-ghost">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category boxes -->
+    <section class="categories" id="categories" aria-label="Portfolio categories">
+      <div class="container categories-grid" id="categories-grid" role="navigation" aria-label="Category navigation">
+        <button class="category-card" data-target="profile">Profile</button>
+        <button class="category-card" data-target="logo">Logo & Branding</button>
+        <button class="category-card" data-target="poster">Poster Designs</button>
+        <button class="category-card" data-target="print">Print Designs</button>
+        <button class="category-card" data-target="marketing">Marketing & Ads</button>
+        <button class="category-card" data-target="packaging">Packaging Designs</button>
+        <button class="category-card" data-target="event">Event Designs</button>
+      </div>
+    </section>
+
+    <!-- Viewer container: JS dynamically generates 62 page elements -->
+    <section id="viewer" class="viewer" aria-label="Portfolio pages" tabindex="-1">
+      <div class="viewer-inner" id="viewer-inner" role="list">
+        <!-- pages injected by script.js -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <p>Thank you — Designed by SHAMMAS S M</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Back to top -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
+  <noscript>
+    <div class="no-js-message">
+      JavaScript is required for the full interactive experience. The pages will still display as images if JS is disabled.
+    </div>
+  </noscript>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

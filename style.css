@@ -387,10 +387,6 @@ body.locked{overflow:hidden}
     font-size:12px;
     border-radius:12px;
 }
-   
-.category-card:last-child{
-    grid-column:2 / span 2;
-}
 
 /* Mobile image spacing fix */
 
